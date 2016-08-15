@@ -1,0 +1,141 @@
+---
+title: "PDF Version of Written Pieces"
+author: "Irucka Embry"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_document:
+    highlight: kate
+    theme: readable
+vignette: >
+  %\VignetteIndexEntry{Viewing Each Written Piece as a PDF}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<br />
+<br />
+
+# View PDF version of each written piece
+
+If you would like to view the PDFs, then use the code below that matches your operating system:
+
+<br />
+
+# Load the iemisctext package first
+```{r eval = FALSE}
+library(iemisctext)
+```
+
+<br />
+<br />
+
+# under Unix-based operating systems
+
+Source: [Show me the pdf already | R-bloggers By Will](http://www.r-bloggers.com/show-me-the-pdf-already/)
+```{r eval = FALSE}
+pdf <- getOption("pdfviewer", default = "")
+f <- system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext")
+system2(pdf, args = f)
+```
+
+```{r eval = FALSE}
+pdf <- getOption("pdfviewer", default = "")
+f <- system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext")
+system2(pdf, args = f)
+```
+
+```{r eval = FALSE}
+pdf <- getOption("pdfviewer", default = "")
+f <- system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext")
+system2(pdf, args = f)
+```
+
+```{r eval = FALSE}
+pdf <- getOption("pdfviewer", default = "")
+f <- system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext")
+system2(pdf, args = f)
+```
+
+```{r eval = FALSE}
+pdf <- getOption("pdfviewer", default = "")
+f <- system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext")
+system2(pdf, args = f)
+```
+
+```{r eval = FALSE}
+pdf <- getOption("pdfviewer", default = "")
+f <- system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext")
+system2(pdf, args = f)
+```
+
+<br />
+<br />
+
+# under MS Windows operating systems
+
+Source: [Show me the pdf already | R-bloggers By Will](http://www.r-bloggers.com/show-me-the-pdf-already/)
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext")
+shell.exec(normalizePath(f))
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext")
+shell.exec(normalizePath(f))
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext")
+shell.exec(normalizePath(f))
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext")
+shell.exec(normalizePath(f))
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext")
+shell.exec(normalizePath(f))
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext")
+shell.exec(normalizePath(f))
+```
+
+<br />
+<br />
+
+# under OS X operating systems
+
+Source: [Opening PDF within R studio using file.show - Stack Overflow -- rensa](http://stackoverflow.com/questions/33791493/opening-pdf-within-r-studio-using-file-show/33791818)
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext")
+system2("open", args = f, wait = FALSE)
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext")
+system2("open", args = f, wait = FALSE)
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext")
+system2("open", args = f, wait = FALSE)
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext")
+system2("open", args = f, wait = FALSE)
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext")
+system2("open", args = f, wait = FALSE)
+```
+
+```{r eval = FALSE}
+f <- system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext")
+system2("open", args = f, wait = FALSE)
+```
