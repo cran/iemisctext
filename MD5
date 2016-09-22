@@ -1,6 +1,6 @@
-dc451ab844e2dbb5ff8463e70e97930f *DESCRIPTION
+fd9aeb53a287bb6f01ac54871ad78c70 *DESCRIPTION
 dc21c19f0d6968ee25d441b2cf46017d *NAMESPACE
-d6cb68abc98f360cd7090da2aeae744c *NEWS.md
+5e4dabc4103bf3cbfaa6938b48ac9ef5 *NEWS.md
 3f342e7e4335a650e9e9562bd3cf4dbf *R/data-anarchy.R
 d192a7b11796cb497160f9a7d9a12cf7 *R/data-climate-strange.R
 b6045867f270ae57422c1eeadbde2e79 *R/data-connect-dots.R
@@ -17,12 +17,12 @@ e2f59d2c8ceb0182cf63822d72871b06 *README.md
 e1ce2b7a14cf2aba7b3a1098243098bb *data/war_prayer.RData
 c9d6fa265d97635591a4e96b2ba73b10 *data/war_racket.RData
 6e24e9c0c39477f6098c1c08d2ddc43b *inst/COPYRIGHT
-c48aec36b6335db0e527eabeac8b4f21 *inst/doc/Analysis-using-tm-vignette.R
-401e3c556976bd88eec0ff987525bace *inst/doc/Analysis-using-tm-vignette.Rmd
-401a4b88af2f4115d46dbf75757f4c5f *inst/doc/Analysis-using-tm-vignette.html
+3d8357fdeda50d86dafe9cb9d8d96288 *inst/doc/Analysis-using-tm-vignette.R
+9861946bfb7ff445d97c37a7fc860a3f *inst/doc/Analysis-using-tm-vignette.Rmd
+56171c129de48348b6f3ad426ed60256 *inst/doc/Analysis-using-tm-vignette.html
 686c395c1126fe3e0c22098e653027a3 *inst/doc/View-PDFs-vignette.R
-8d12138533ad20ef561a39912280c6f0 *inst/doc/View-PDFs-vignette.Rmd
-d959ce8914766bdf4f0b3c09ab56930d *inst/doc/View-PDFs-vignette.html
+1d45107330d74682bd029af7f2fa2355 *inst/doc/View-PDFs-vignette.Rmd
+85e12a7c709a0f297268d3bf914acbb1 *inst/doc/View-PDFs-vignette.html
 aeb99a86234f84b56ddb2c40b08be7e8 *inst/texts/corpus/Climate-Strange_corpus.txt
 21861c6e5c0b3251df691a627d7b6901 *inst/texts/corpus/Connect-the-Dots_corpus.txt
 6dadfc127690d26fa62561e3f05bb38c *inst/texts/corpus/The-Mask-of-Anarchy_corpus.txt
@@ -50,5 +50,5 @@ ae3750549005a46bdec85919025c5666 *man/connect_dots.Rd
 ac56becc617cf1579931deee206bc0a7 *man/us_them.Rd
 7bff13f43f4241e06f7ef5e71cadcace *man/war_prayer.Rd
 f6254d7d21ce1d9ca3dd92d8dba47205 *man/war_racket.Rd
-401e3c556976bd88eec0ff987525bace *vignettes/Analysis-using-tm-vignette.Rmd
-8d12138533ad20ef561a39912280c6f0 *vignettes/View-PDFs-vignette.Rmd
+9861946bfb7ff445d97c37a7fc860a3f *vignettes/Analysis-using-tm-vignette.Rmd
+1d45107330d74682bd029af7f2fa2355 *vignettes/View-PDFs-vignette.Rmd

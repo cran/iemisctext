@@ -1,4 +1,4 @@
-## ------------------------------------------------------------------------
+## ---- warning = FALSE, message = FALSE-----------------------------------
 library(install.load)
 load_package("iemisctext", "tm") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
 
