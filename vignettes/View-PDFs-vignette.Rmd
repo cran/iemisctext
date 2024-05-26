@@ -1,142 +1,114 @@
 ---
-title: "PDF Version of Written Pieces"
+title: "iemisctext: PDF Version of Written Pieces"
 author: "Irucka Embry"
 date: "`r Sys.Date()`"
+lang: en-us
+urlcolor: blue
 output:
-  rmarkdown::html_document:
+  rmarkdown::pdf_document:
     highlight: kate
-    theme: readable
-    code_download: TRUE
+    toc: true
+    latex_engine: xelatex
 vignette: >
-  %\VignetteIndexEntry{Viewing Each Written Piece as a PDF}
+  %\VignetteIndexEntry{iemisctext PDF Version of Written Pieces}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-<br />
-<br />
+\bigskip
+
+## Install the packages
+
+Note: If you would like to view the PDFs, you will need to copy and paste the following command in R first to make sure you have all the packages and their dependencies installed:  
+
+```{r eval = FALSE, tidy = TRUE}
+install.packages(c("iemisctext", "xopen"))
+# install the packages and their dependencies (including any system dependencies)
+```
+
+\bigskip
+\bigskip
+
+## Load the packages
+
+Note: If you would like to view the PDFs, you will need to copy and paste the following commands in R first to make sure you have all the packages loaded:  
+
+```{r eval = FALSE, tidy = TRUE}
+# load the required packages
+install.load::load_package("iemisctext", "xopen")
+# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+```
+
+\bigskip
+\bigskip
 
 # View PDF version of each written piece
 
-If you would like to view the PDFs, then use the code below that matches your operating system:
+If you would like to view the PDFs, copy-and-paste the following R code into the R console:  
 
-<br />
-
-# Load the iemisctext package first
 ```{r eval = FALSE}
-library(iemisctext)
-```
 
-<br />
-<br />
+xopen(system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext"))
 
-# under Unix-based operating systems
-
-Source: [Show me the pdf already | R-bloggers By Will](http://www.r-bloggers.com/show-me-the-pdf-already/)
-```{r eval = FALSE}
-pdf <- getOption("pdfviewer", default = "")
-f <- system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext")
-system2(pdf, args = f)
 ```
 
 ```{r eval = FALSE}
-pdf <- getOption("pdfviewer", default = "")
-f <- system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext")
-system2(pdf, args = f)
+
+xopen(system.file("texts", "pdf", "Appeal-womanhood-throughout-the-world.pdf", package = "iemisctext"))
+
 ```
 
 ```{r eval = FALSE}
-pdf <- getOption("pdfviewer", default = "")
-f <- system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext")
-system2(pdf, args = f)
+
+xopen(system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext"))
+
 ```
 
 ```{r eval = FALSE}
-pdf <- getOption("pdfviewer", default = "")
-f <- system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext")
-system2(pdf, args = f)
+
+xopen(system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext"))
+
 ```
 
 ```{r eval = FALSE}
-pdf <- getOption("pdfviewer", default = "")
-f <- system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext")
-system2(pdf, args = f)
+
+xopen(system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext"))
+
 ```
 
 ```{r eval = FALSE}
-pdf <- getOption("pdfviewer", default = "")
-f <- system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext")
-system2(pdf, args = f)
-```
 
-<br />
-<br />
+xopen(system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext"))
 
-# under MS Windows operating systems
-
-Source: [Show me the pdf already | R-bloggers By Will](http://www.r-bloggers.com/show-me-the-pdf-already/)
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext")
-shell.exec(normalizePath(f))
 ```
 
 ```{r eval = FALSE}
-f <- system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext")
-shell.exec(normalizePath(f))
+
+xopen(system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext"))
+
 ```
 
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext")
-shell.exec(normalizePath(f))
-```
+\bigskip
+\bigskip
 
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext")
-shell.exec(normalizePath(f))
-```
+# EcoC²S Links
 
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext")
-shell.exec(normalizePath(f))
-```
+EcoC²S Home -- https://www.ecoccs.com/  
+About EcoC²S -- https://www.ecoccs.com/about-ecoc2s.html  
+Services -- https://www.ecoccs.com/services.html  
+1 Stop Shop -- https://www.ecoccs.com/other-biz.html  
+Products -- https://www.questionuniverse.com/products.html  
+Media -- https://www.ecoccs.com/media.html  
+Resources -- https://www.ecoccs.com/resources.html  
+R Trainings and Resources provided by EcoC²S (Irucka Embry, E.I.T.) -- https://www.ecoccs.com/rtraining.html  
 
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext")
-shell.exec(normalizePath(f))
-```
+\bigskip
+\bigskip
 
-<br />
-<br />
+# Copyright and License
 
-# under OS X operating systems
+All R code written by Irucka Embry is distributed under the GPL-3 (or later) license, see the [GNU General Public License {GPL} page](https://www.gnu.org/licenses/gpl-3.0.html).  
 
-Source: [Opening PDF within R studio using file.show - Stack Overflow -- rensa](http://stackoverflow.com/questions/33791493/opening-pdf-within-r-studio-using-file-show/33791818)
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext")
-system2("open", args = f, wait = FALSE)
-```
+All written content originally created by Irucka Embry is copyrighted under the Creative Commons Attribution-ShareAlike 4.0 International license. All other written content retains the copyright of the original author(s).  
 
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "The-War-Prayer.pdf", package = "iemisctext")
-system2("open", args = f, wait = FALSE)
-```
-
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "War-Is-A-Racket.pdf", package = "iemisctext")
-system2("open", args = f, wait = FALSE)
-```
-
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemisctext")
-system2("open", args = f, wait = FALSE)
-```
-
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext")
-system2("open", args = f, wait = FALSE)
-```
-
-```{r eval = FALSE}
-f <- system.file("texts", "pdf", "Untitled_Climate-Strange.pdf", package = "iemisctext")
-system2("open", args = f, wait = FALSE)
-```
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).  

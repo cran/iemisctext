@@ -1,11 +1,24 @@
-## ---- warning = FALSE, message = FALSE-----------------------------------
-library(install.load)
-load_package("iemisctext", "tm") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+## ----warning = FALSE, message = FALSE, tidy = TRUE----------------------------
+install.load::load_package("iemisctext", "tm")
+# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+
+
+# appeal_womanhood_world
+data(appeal_womanhood_world)
+
+# create a document term matrix of appeal_womanhood_world
+a <- DocumentTermMatrix(appeal_womanhood_world)
+
+# find terms used > 5 times
+findFreqTerms(a, 5)
+
+# Zipf's law
+Zipf_plot(a)
+
+
 
 
 # anarchy
-# Example 1
-
 data(anarchy)
 
 # create a document term matrix of anarchy
@@ -21,8 +34,6 @@ Zipf_plot(a)
 
 
 # war_prayer
-# Example 1
-
 data(war_prayer)
 
 # create a document term matrix of war_prayer
@@ -38,8 +49,6 @@ Zipf_plot(wp)
 
 
 # war_racket
-# Example 1
-
 data(war_racket)
 
 # create a document term matrix of war_racket
@@ -55,8 +64,6 @@ Zipf_plot(wr)
 
 
 # connect_dots
-# Example 1
-
 data(connect_dots)
 
 # create a document term matrix of connect_dots
@@ -72,8 +79,6 @@ Zipf_plot(cd)
 
 
 # us_them
-# Example 1
-
 data(us_them)
 
 # create a document term matrix of us_them
@@ -89,8 +94,6 @@ Zipf_plot(ut)
 
 
 # climate_strange
-# Example 1
-
 data(climate_strange)
 
 # create a document term matrix of climate_strange
@@ -102,13 +105,19 @@ findFreqTerms(cs, 5)
 # Zipf's law
 Zipf_plot(cs)
 
-## ----eval = FALSE--------------------------------------------------------
-#  library(install.load)
-#  load_package("iemisctext", "tm") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+## ----eval = FALSE-------------------------------------------------------------
+#  install.load::load_package("iemisctext", "tm")
+#  # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+#  
+#  # appeal_womanhood_world
+#  data(appeal_womanhood_world)
+#  
+#  # View text representation of appeal_womanhood_world
+#  inspect(appeal_womanhood_world[[1]])
+#  
+#  
 #  
 #  # anarchy
-#  # Example 2
-#  
 #  data(anarchy)
 #  
 #  # View text representation of anarchy
@@ -118,8 +127,6 @@ Zipf_plot(cs)
 #  
 #  
 #  # war_prayer
-#  # Example 2
-#  
 #  data(war_prayer)
 #  
 #  # View text representation of war_prayer
@@ -140,8 +147,6 @@ Zipf_plot(cs)
 #  
 #  
 #  # connect_dots
-#  # Example 2
-#  
 #  data(connect_dots)
 #  
 #  # View text representation of connect_dots
@@ -151,8 +156,6 @@ Zipf_plot(cs)
 #  
 #  
 #  # us_them
-#  # Example 2
-#  
 #  data(us_them)
 #  
 #  # View text representation of us_them
@@ -162,8 +165,6 @@ Zipf_plot(cs)
 #  
 #  
 #  # climate_strange
-#  # Example 2
-#  
 #  data(climate_strange)
 #  
 #  # View text representation of climate_strange

@@ -4,7 +4,15 @@
 \name{anarchy}
 \alias{anarchy}
 \title{The Mask of Anarchy}
-\format{A VCorpus of 1 text document.}
+\format{
+A VCorpus of 1 text document.
+}
+\source{
+\enumerate{
+   \item Percy Bysshe Shelley, \emph{The Masque of Anarchy}, London: Edward Moxon, 1832, page 1-42. See \url{https://archive.org/stream/masqueanarchyap00huntgoog} and \url{https://knarf.english.upenn.edu/PShelley/anarchy.html}.
+   \item Wikimedia Foundation, Inc. Wikipedia, 14 April 2016, “The Masque of Anarchy”, \url{https://en.wikipedia.org/wiki/The_Masque_of_Anarchy}.
+}
+}
 \usage{
 anarchy
 }
@@ -16,14 +24,4 @@ Anarchy" (or "The Mask of Anarchy") is a British political poem written in
 first modern statement of the principle of nonviolent resistance." Source:
 Wikipedia.
 }
-\examples{
-data(anarchy)
-anarchy
-}
-\references{
-\enumerate{
-   \item Percy Bysshe Shelley, \emph{The Masque of Anarchy}, London: Edward Moxon, 1832, page 1-42. See \url{https://archive.org/stream/masqueanarchyap00huntgoog} and \url{http://knarf.english.upenn.edu/PShelley/anarchy.html}.
-   \item Wikimedia Foundation, Inc. Wikipedia, 14 April 2016, “The Masque of Anarchy”, \url{https://en.wikipedia.org/wiki/The_Masque_of_Anarchy}.
-}
-}
-
+\keyword{datasets}

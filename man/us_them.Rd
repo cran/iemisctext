@@ -4,7 +4,12 @@
 \name{us_them}
 \alias{us_them}
 \title{Untitled: Us versus Them or People Screwing over Other People}
-\format{A VCorpus of 1 text document.}
+\format{
+A VCorpus of 1 text document.
+}
+\source{
+Irucka Ajani Embry, "Untitled: Us versus Them or People Screwing over Other People ...", \emph{Balancing the Rift: ReCONNECTualizing the Pasenture}, Nashville, Tennessee: Questioning the Universe Publishing, 2014, page 119-123. See \url{https://www.questionuniverse.com/books/balancing-the-rift.html}.
+}
 \usage{
 us_them
 }
@@ -12,11 +17,4 @@ us_them
 A dataset which contains one poem written by Irucka Ajani Embry that
 challenges the ideas of "us versus them" through a variety of examples.
 }
-\examples{
-data(us_them)
-us_them
-}
-\references{
-Irucka Ajani Embry, "Untitled: Us versus Them or People Screwing over Other People ...", \emph{Balancing the Rift: ReCONNECTualizing the Pasenture}, Nashville, Tennessee: Questioning the Universe Publishing, 2014, page 119-123. See \url{http://www.questionuniverse.com/books.html}.
-}
-
+\keyword{datasets}

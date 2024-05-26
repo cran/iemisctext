@@ -10,14 +10,13 @@
 #' @format A VCorpus of 1 text document.
 #'
 #'
-#' @references
-#' Obiora Embry, "Connect the D.O.T.S.", \emph{Expanding Horizons Through Creative Expressions: Reflections and Thoughts Related to the Struggle for Peace, Sustainability, Equality, and the Search for Humanity}, Lexington, Kentucky: Obiora Embry, 2013, page 78-82. See \url{http://www.embrybooks.org/books/expanding-horizons/}.
+#' @source
+#' Obiora Embry, "Connect the D.O.T.S.", \emph{Expanding Horizons Through Creative Expressions: Reflections and Thoughts Related to the Struggle for Peace, Sustainability, Equality, and the Search for Humanity}, Lexington, Kentucky: Obiora Embry, 2013, page 78-82. See \url{https://www.embrybooks.org/books/expanding-horizons/}.
 #'
 #'
-#' @docType data
-#' @name connect_dots
-#' @usage connect_dots
-#' @examples
-#' data(connect_dots)
-#' connect_dots
-NULL
+#'
+#'
+#'
+#'
+"connect_dots"
+#> [1] "connect_dots"

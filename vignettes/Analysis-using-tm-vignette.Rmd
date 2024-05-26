@@ -1,29 +1,47 @@
 ---
-title: "Example Analysis using the tm package"
+title: "iemisctext: Example Analysis using the tm package"
 author: "Irucka Embry"
 date: "`r Sys.Date()`"
+lang: en-us
+urlcolor: blue
 output:
-  rmarkdown::html_document:
+  rmarkdown::pdf_document:
     highlight: kate
-    theme: readable
-    code_download: TRUE
+    toc: true
+    latex_engine: xelatex
 vignette: >
-  %\VignetteIndexEntry{Examples using the tm package}
+  %\VignetteIndexEntry{iemisctext Examples using the tm package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
+\bigskip
+
 # Examples
 
+## Example 1
 
-```{r, warning = FALSE, message = FALSE}
-library(install.load)
-load_package("iemisctext", "tm") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+```{r, warning = FALSE, message = FALSE, tidy = TRUE}
+install.load::load_package("iemisctext", "tm")
+# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+
+
+# appeal_womanhood_world
+data(appeal_womanhood_world)
+
+# create a document term matrix of appeal_womanhood_world
+a <- DocumentTermMatrix(appeal_womanhood_world)
+
+# find terms used > 5 times
+findFreqTerms(a, 5)
+
+# Zipf's law
+Zipf_plot(a)
+
+
 
 
 # anarchy
-# Example 1
-
 data(anarchy)
 
 # create a document term matrix of anarchy
@@ -39,8 +57,6 @@ Zipf_plot(a)
 
 
 # war_prayer
-# Example 1
-
 data(war_prayer)
 
 # create a document term matrix of war_prayer
@@ -56,8 +72,6 @@ Zipf_plot(wp)
 
 
 # war_racket
-# Example 1
-
 data(war_racket)
 
 # create a document term matrix of war_racket
@@ -73,8 +87,6 @@ Zipf_plot(wr)
 
 
 # connect_dots
-# Example 1
-
 data(connect_dots)
 
 # create a document term matrix of connect_dots
@@ -90,8 +102,6 @@ Zipf_plot(cd)
 
 
 # us_them
-# Example 1
-
 data(us_them)
 
 # create a document term matrix of us_them
@@ -107,8 +117,6 @@ Zipf_plot(ut)
 
 
 # climate_strange
-# Example 1
-
 data(climate_strange)
 
 # create a document term matrix of climate_strange
@@ -121,14 +129,26 @@ findFreqTerms(cs, 5)
 Zipf_plot(cs)
 ```
 
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+## Example 2
 
 ```{r eval = FALSE}
-library(install.load)
-load_package("iemisctext", "tm") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+install.load::load_package("iemisctext", "tm")
+# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+
+# appeal_womanhood_world
+data(appeal_womanhood_world)
+
+# View text representation of appeal_womanhood_world
+inspect(appeal_womanhood_world[[1]])
+
+
 
 # anarchy
-# Example 2
-
 data(anarchy)
 
 # View text representation of anarchy
@@ -138,8 +158,6 @@ inspect(anarchy[[1]])
 
 
 # war_prayer
-# Example 2
-
 data(war_prayer)
 
 # View text representation of war_prayer
@@ -160,8 +178,6 @@ inspect(war_racket[[1]])
 
 
 # connect_dots
-# Example 2
-
 data(connect_dots)
 
 # View text representation of connect_dots
@@ -171,8 +187,6 @@ inspect(connect_dots[[1]])
 
 
 # us_them
-# Example 2
-
 data(us_them)
 
 # View text representation of us_them
@@ -182,10 +196,33 @@ inspect(us_them[[1]])
 
 
 # climate_strange
-# Example 2
-
 data(climate_strange)
 
 # View text representation of climate_strange
 inspect(climate_strange[[1]])
 ```
+
+\bigskip
+\bigskip
+
+# EcoC²S Links
+
+EcoC²S Home -- https://www.ecoccs.com/  
+About EcoC²S -- https://www.ecoccs.com/about-ecoc2s.html  
+Services -- https://www.ecoccs.com/services.html  
+1 Stop Shop -- https://www.ecoccs.com/other-biz.html  
+Products -- https://www.questionuniverse.com/products.html  
+Media -- https://www.ecoccs.com/media.html  
+Resources -- https://www.ecoccs.com/resources.html  
+R Trainings and Resources provided by EcoC²S (Irucka Embry, E.I.T.) -- https://www.ecoccs.com/rtraining.html  
+
+\bigskip
+\bigskip
+
+# Copyright and License
+
+All R code written by Irucka Embry is distributed under the GPL-3 (or later) license, see the [GNU General Public License {GPL} page](https://www.gnu.org/licenses/gpl-3.0.html).  
+
+All written content originally created by Irucka Embry is copyrighted under the Creative Commons Attribution-ShareAlike 4.0 International license. All other written content retains the copyright of the original author(s).  
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).  

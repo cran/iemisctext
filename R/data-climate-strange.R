@@ -7,14 +7,13 @@
 #' @format A VCorpus of 1 text document.
 #'
 #'
-#' @references
-#' Irucka Ajani Embry, "Untitled: Climate Strange", \emph{Balancing the Rift: ReCONNECTualizing the Pasenture}, Nashville, Tennessee: Questioning the Universe Publishing, 2014, page 206-213. See \url{http://www.questionuniverse.com/books.html}.
+#' @source
+#' Irucka Ajani Embry, "Untitled: Climate Strange", \emph{Balancing the Rift: ReCONNECTualizing the Pasenture}, Nashville, Tennessee: Questioning the Universe Publishing, 2014, page 206-213. See \url{https://www.questionuniverse.com/books/balancing-the-rift.html}.
 #'
 #'
-#' @docType data
-#' @name climate_strange
-#' @usage climate_strange
-#' @examples
-#' data(climate_strange)
-#' climate_strange
-NULL
+#'
+#'
+#'
+#'
+"climate_strange"
+#> [1] "climate_strange"

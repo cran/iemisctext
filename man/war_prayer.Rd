@@ -4,7 +4,16 @@
 \name{war_prayer}
 \alias{war_prayer}
 \title{The War Prayer}
-\format{A VCorpus of 1 text document.}
+\format{
+A VCorpus of 1 text document.
+}
+\source{
+\enumerate{
+   \item Mark Twain, "The War Prayer", \emph{The Complete Works of Mark Twain: Europe and Elsewhere, Vol. 20}, New York City, New York: Harper and Brothers, 1923, page 394-399. See \url{https://archive.org/details/completeworksofm20twai} and \url{http://www.twainquotes.com/UniformEds/UniformEdsCh34.html}.
+   \item Wikimedia Foundation, Inc. Wikipedia, 28 July 2016, “The War Prayer”, See \url{https://en.wikipedia.org/wiki/The_War_Prayer} and \url{https://warprayer.org/}.
+   \item Wikimedia Foundation, Inc. Wikisource, 26 October 2014, “The War Prayer”, \url{https://en.wikisource.org/wiki/The_War_Prayer}.
+}
+}
 \usage{
 war_prayer
 }
@@ -24,15 +33,4 @@ enemies. What follows is a grisly depiction of hardships inflicted on
 war-torn nations by their conquerors. The story ends with the man being
 ignored." (Source: The War Prayer [Wikipedia])
 }
-\examples{
-data(war_prayer)
-war_prayer
-}
-\references{
-\enumerate{
-   \item Mark Twain, "The War Prayer", \emph{The Complete Works of Mark Twain: Europe and Elsewhere, Vol. 20}, New York City, New York: Harper and Brothers, 1923, page 394-399. See \url{https://archive.org/details/completeworksofm20twai} and \url{http://www.twainquotes.com/UniformEds/UniformEdsCh34.html}.
-   \item Wikimedia Foundation, Inc. Wikipedia, 28 July 2016, “The War Prayer”, See \url{https://en.wikipedia.org/wiki/The_War_Prayer} and \url{http://warprayer.org/}.
-   \item Wikimedia Foundation, Inc. Wikisource, 26 October 2014, “The War Prayer”, \url{https://en.wikisource.org/wiki/The_War_Prayer}.
-}
-}
-
+\keyword{datasets}

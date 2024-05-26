@@ -18,18 +18,17 @@
 #' @format A VCorpus of 1 text document.
 #'
 #'
-#' @references
+#' @source
 #' \enumerate{
 #'    \item Mark Twain, "The War Prayer", \emph{The Complete Works of Mark Twain: Europe and Elsewhere, Vol. 20}, New York City, New York: Harper and Brothers, 1923, page 394-399. See \url{https://archive.org/details/completeworksofm20twai} and \url{http://www.twainquotes.com/UniformEds/UniformEdsCh34.html}.
-#'    \item Wikimedia Foundation, Inc. Wikipedia, 28 July 2016, “The War Prayer”, See \url{https://en.wikipedia.org/wiki/The_War_Prayer} and \url{http://warprayer.org/}.
+#'    \item Wikimedia Foundation, Inc. Wikipedia, 28 July 2016, “The War Prayer”, See \url{https://en.wikipedia.org/wiki/The_War_Prayer} and \url{https://warprayer.org/}.
 #'    \item Wikimedia Foundation, Inc. Wikisource, 26 October 2014, “The War Prayer”, \url{https://en.wikisource.org/wiki/The_War_Prayer}.
 #' }
 #'
 #'
-#' @docType data
-#' @name war_prayer
-#' @usage war_prayer
-#' @examples
-#' data(war_prayer)
-#' war_prayer
-NULL
+#'
+#'
+#'
+#'
+"war_prayer"
+#> [1] "war_prayer"

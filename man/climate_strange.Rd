@@ -4,7 +4,12 @@
 \name{climate_strange}
 \alias{climate_strange}
 \title{Untitled: Climate Strange}
-\format{A VCorpus of 1 text document.}
+\format{
+A VCorpus of 1 text document.
+}
+\source{
+Irucka Ajani Embry, "Untitled: Climate Strange", \emph{Balancing the Rift: ReCONNECTualizing the Pasenture}, Nashville, Tennessee: Questioning the Universe Publishing, 2014, page 206-213. See \url{https://www.questionuniverse.com/books/balancing-the-rift.html}.
+}
 \usage{
 climate_strange
 }
@@ -13,11 +18,4 @@ A dataset which contains one poem written by Irucka Ajani Embry that
 challenges the nature of Reality and the expressions of material science
 (Eugenics, Genetic Engineering, Global Warming, etc.).
 }
-\examples{
-data(climate_strange)
-climate_strange
-}
-\references{
-Irucka Ajani Embry, "Untitled: Climate Strange", \emph{Balancing the Rift: ReCONNECTualizing the Pasenture}, Nashville, Tennessee: Questioning the Universe Publishing, 2014, page 206-213. See \url{http://www.questionuniverse.com/books.html}.
-}
-
+\keyword{datasets}

@@ -11,17 +11,16 @@
 #' @format A VCorpus of 1 text document.
 #'
 #'
-#' @references
+#' @source
 #' \enumerate{
-#'    \item Percy Bysshe Shelley, \emph{The Masque of Anarchy}, London: Edward Moxon, 1832, page 1-42. See \url{https://archive.org/stream/masqueanarchyap00huntgoog} and \url{http://knarf.english.upenn.edu/PShelley/anarchy.html}.
+#'    \item Percy Bysshe Shelley, \emph{The Masque of Anarchy}, London: Edward Moxon, 1832, page 1-42. See \url{https://archive.org/stream/masqueanarchyap00huntgoog} and \url{https://knarf.english.upenn.edu/PShelley/anarchy.html}.
 #'    \item Wikimedia Foundation, Inc. Wikipedia, 14 April 2016, “The Masque of Anarchy”, \url{https://en.wikipedia.org/wiki/The_Masque_of_Anarchy}.
 #' }
 #'
 #'
-#' @docType data
-#' @name anarchy
-#' @usage anarchy
-#' @examples
-#' data(anarchy)
-#' anarchy
-NULL
+#'
+#'
+#'
+#'
+"anarchy"
+#> [1] "anarchy"
