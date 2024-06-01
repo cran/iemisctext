@@ -1,7 +1,8 @@
 ﻿# iemisctext
 
-R data package containing an eclectic collection of the following written pieces: "Appeal to Womanhood Throughout the World" By Julia Ward Howe, "The War Prayer" by Mark Twain, "War Is A Racket" by Major General Smedley Butler, "The Mask of Anarchy: Written on the Occasion of the Massacre at Manchester" by Percy Bysshe Shelley, "Connect the D.O.T.S." by Obiora Embry, "Untitled: Climate Strange" by Irucka Ajani Embry, and "Untitled: Us versus Them or People Screwing over Other People (as we all live on one Earth and there is no 'us versus them' in the actual Ultimate Reality}" by Irucka Ajani Embry.
+R data package containing an eclectic collection of the following written pieces: &ldquo;Appeal to Womanhood Throughout the World&rdquo; By Julia Ward Howe, &ldquo;The War Prayer&rdquo; by Mark Twain, &ldquo;War Is A Racket&rdquo; by Major General Smedley Butler, &ldquo;The Mask of Anarchy: Written on the Occasion of the Massacre at Manchester&rdquo; by Percy Bysshe Shelley, &ldquo;Connect the D.O.T.S.&rdquo; by Obiora Embry, &ldquo;Untitled: Climate Strange&rdquo; by Irucka Ajani Embry, and &ldquo;Untitled: Us versus Them or People Screwing over Other People (as we all live on one Earth and there is no &ldquo;us versus them&rdquo; in the actual Ultimate Reality}&rdquo; by Irucka Ajani Embry.  
 
+Please refer to the text_citation.cff file for the reference citations and to the COPYRIGHTS file for the reference copyright information.  
 
 
 
@@ -12,20 +13,43 @@ install.packages("iemisctext")
 ```
 
 
-# Package Contents
-This package currently contains 7 datasets:
+# Help
 
-* `anarchy`: "The Mask of Anarchy: Written on the Occasion of the Massacre at Manchester" By Percy Bysshe Shelley
-* `war_prayer`: "The War Prayer" By Mark Twain
-* `war_racket`: "War Is A Racket" By Major General Smedley Butler
-* `connect_dots`: "Connect the D.O.T.S." By Obiora Embry
-* `us_them`: "Untitled: Us versus Them or People Screwing over Other People (as we all live on one Earth and there is no "us versus them" in the actual Ultimate Reality}" By Irucka Ajani Embry
-* `climate_strange`: "Untitled: Climate Strange" By Irucka Ajani Embry
-* `appeal_womanhood_world`: "Appeal to Womanhood Throughout the World" By Julia Ward Howe
+With credit due to the `matlab` package, for a complete list of functions and the package DESCRIPTION file, use:  
+
+```R
+library(help = "iemisctext")
+```
+
+
+
+# Vignette Viewing
+
+If you wish to browse the `iemisctext` Vignettes, please copy-and-paste the following code into R:  
+
+```R
+library(iemisctext)
+
+utils::browseVignettes("iemisctext")
+```
+
+
+# Package Contents
+
+This package currently contains 7 datasets:  
+
+* `anarchy`: &ldquo;The Mask of Anarchy: Written on the Occasion of the Massacre at Manchester&rdquo; By Percy Bysshe Shelley
+* `war_prayer`: &ldquo;The War Prayer&rdquo; By Mark Twain
+* `war_racket`: &ldquo;War Is A Racket&rdquo; By Major General Smedley Butler
+* `connect_dots`: &ldquo;Connect the D.O.T.S.&rdquo; By Obiora Embry
+* `us_them`: &ldquo;Untitled: Us versus Them or People Screwing over Other People (as we all live on one Earth and there is no &ldquo;us versus them&rdquo; in the actual Ultimate Reality}&rdquo; By Irucka Ajani Embry
+* `climate_strange`: &ldquo;Untitled: Climate Strange&rdquo; By Irucka Ajani Embry
+* `appeal_womanhood_world`: &ldquo;Appeal to Womanhood Throughout the World&rdquo; By Julia Ward Howe
 
 
 
 # Examples (see more examples in the vignettes)
+
 ```R
 install.load::load_package("tm", "iemisctext")
 # load needed packages using the load_package function from the install.load
@@ -74,20 +98,29 @@ DublinCore(climate_strange[[1]])
 
 # Disclaimer
 
-This software is provided "AS IS." See the GPL License for more information.
+This software is provided &ldquo;AS IS&rdquo;. See the Artistic License 2.0 for more information.  
 
 
 
 # License
 
-iemisctext is distributed under the GPL-3 (or later) license, as stated in the DESCRIPTION file. For more info, see [GNU General Public License (GPL) page](https://www.gnu.org/licenses/gpl-3.0.html).
+iemisctext is distributed under the Artistic License 2.0, as stated in the DESCRIPTION file. For more info, see [Artistic License 2.0 - The Perl and Raku Foundation](https://www.perlfoundation.org/artistic-license-20.html). Previously, iemisctext was distributed under the GPL >= 3. The Artistic License 2.0 is compatible with the GPL.  
 
 
 
 # Copyright
 
-Some of the content of iemisctext is copyrighted under the CC BY-ND 4.0 license, as stated in the COPYRIGHT file. For more info, see [Attribution-NoDerivatives 4.0 International page](https://creativecommons.org/licenses/by-nd/4.0/).
+Some of the content of iemisctext is copyrighted under the CC BY-ND 4.0 license, as stated in the COPYRIGHTS file. For more info, see [Attribution-NoDerivatives 4.0 International page](https://creativecommons.org/licenses/by-nd/4.0/).  
 
-Some of the content of iemisctext is copyrighted under the CC BY-ND 3.0 license, as stated in the COPYRIGHT file. For more info, see [Attribution-NoDerivatives 4.0 International page](https://creativecommons.org/licenses/by-nd/3.0/).
+Some of the content of iemisctext is copyrighted under the CC BY-ND 3.0 license, as stated in the COPYRIGHTS file. For more info, see [Attribution-NoDerivatives 4.0 International page](https://creativecommons.org/licenses/by-nd/3.0/).  
 
-The remaining content in iemisctext is copyrighted under the CC0 license, the full license text is included in the COPYRIGHT file. For more info, see [CC0 1.0 Universal page](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
+The remaining content in iemisctext is copyrighted under the CC0 license, the full license text is included in the COPYRIGHTS file. For more info, see [CC0 1.0 Universal page](https://creativecommons.org/publicdomain/zero/1.0/legalcode).  
+
+
+
+# Donations Accepted
+
+If you want to support the continued development of this and my other R packages, feel free to:  
+
+<p><script src="https://liberapay.com/iaembry/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/iaembry/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript></p>

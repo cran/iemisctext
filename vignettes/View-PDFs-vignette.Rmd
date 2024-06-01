@@ -54,7 +54,8 @@ xopen(system.file("texts", "pdf", "Connect_the_Dots.pdf", package = "iemisctext"
 
 ```{r eval = FALSE}
 
-xopen(system.file("texts", "pdf", "Appeal-womanhood-throughout-the-world.pdf", package = "iemisctext"))
+xopen(system.file("texts", "pdf", "Appeal-womanhood-throughout-the-world.pdf",
+package = "iemisctext"))
 
 ```
 
@@ -78,7 +79,8 @@ xopen(system.file("texts", "pdf", "The-Mask-of-Anarchy.pdf", package = "iemiscte
 
 ```{r eval = FALSE}
 
-xopen(system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext"))
+xopen(system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf"
+, package = "iemisctext"))
 
 ```
 

@@ -19,10 +19,8 @@ vignette: >
 
 # Examples
 
-## Example 1
-
 ```{r, warning = FALSE, message = FALSE, tidy = TRUE}
-install.load::load_package("iemisctext", "tm")
+install.load::load_package("iemisctext", "tm", "data.table", "ggwordcloud")
 # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
 
 
@@ -30,13 +28,15 @@ install.load::load_package("iemisctext", "tm")
 data(appeal_womanhood_world)
 
 # create a document term matrix of appeal_womanhood_world
-a <- DocumentTermMatrix(appeal_womanhood_world)
+aww <- DocumentTermMatrix(appeal_womanhood_world, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(a, 5)
+aww
 
-# Zipf's law
-Zipf_plot(a)
+# get the word frequency table
+aww_tf <- as.data.table(termFreq(appeal_womanhood_world$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(aww_tf$V1, aww_tf$V2)
 
 
 
@@ -45,13 +45,15 @@ Zipf_plot(a)
 data(anarchy)
 
 # create a document term matrix of anarchy
-a <- DocumentTermMatrix(anarchy)
+ancy <- DocumentTermMatrix(anarchy, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(a, 5)
+ancy
 
-# Zipf's law
-Zipf_plot(a)
+# get the word frequency table
+ancy_tf <- as.data.table(termFreq(anarchy$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(ancy_tf$V1, ancy_tf$V2)
 
 
 
@@ -60,13 +62,15 @@ Zipf_plot(a)
 data(war_prayer)
 
 # create a document term matrix of war_prayer
-wp <- DocumentTermMatrix(war_prayer)
+wp <- DocumentTermMatrix(war_prayer, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(wp, 5)
+wp
 
-# Zipf's law
-Zipf_plot(wp)
+# get the word frequency table
+wp_tf <- as.data.table(termFreq(war_prayer$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(wp_tf$V1, wp_tf$V2)
 
 
 
@@ -75,13 +79,15 @@ Zipf_plot(wp)
 data(war_racket)
 
 # create a document term matrix of war_racket
-wr <- DocumentTermMatrix(war_racket)
+wr <- DocumentTermMatrix(war_racket, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(wr, 5)
+wr
 
-# Zipf's law
-Zipf_plot(wr)
+# get the word frequency table
+wr_tf <- as.data.table(termFreq(war_racket$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(wr_tf$V1, wr_tf$V2)
 
 
 
@@ -90,13 +96,15 @@ Zipf_plot(wr)
 data(connect_dots)
 
 # create a document term matrix of connect_dots
-cd <- DocumentTermMatrix(connect_dots)
+cds <- DocumentTermMatrix(connect_dots, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(cd, 5)
+cds
 
-# Zipf's law
-Zipf_plot(cd)
+# get the word frequency table
+cds_tf <- as.data.table(termFreq(connect_dots$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(cds_tf$V1, cds_tf$V2)
 
 
 
@@ -105,13 +113,15 @@ Zipf_plot(cd)
 data(us_them)
 
 # create a document term matrix of us_them
-ut <- DocumentTermMatrix(us_them)
+ut <- DocumentTermMatrix(us_them, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(ut, 5)
+ut
 
-# Zipf's law
-Zipf_plot(ut)
+# get the word frequency table
+ut_tf <- as.data.table(termFreq(us_them$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(ut_tf$V1, ut_tf$V2)
 
 
 
@@ -120,88 +130,19 @@ Zipf_plot(ut)
 data(climate_strange)
 
 # create a document term matrix of climate_strange
-cs <- DocumentTermMatrix(climate_strange)
+cs <- DocumentTermMatrix(climate_strange, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc")))
 
-# find terms used > 5 times
-findFreqTerms(cs, 5)
+cs
 
-# Zipf's law
-Zipf_plot(cs)
+# get the word frequency table
+cs_tf <- as.data.table(termFreq(climate_strange$content[[1]]$content, control = list(removePunctuation = TRUE, stopwords = TRUE, weighting = function(x) weightSMART(x, spec = "ntc"))), keep.rownames = TRUE)
+
+# create a word cloud
+ggwordcloud(cs_tf$V1, cs_tf$V2)
 ```
 
 \bigskip
 \bigskip
-\bigskip
-\bigskip
-
-## Example 2
-
-```{r eval = FALSE}
-install.load::load_package("iemisctext", "tm")
-# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
-
-# appeal_womanhood_world
-data(appeal_womanhood_world)
-
-# View text representation of appeal_womanhood_world
-inspect(appeal_womanhood_world[[1]])
-
-
-
-# anarchy
-data(anarchy)
-
-# View text representation of anarchy
-inspect(anarchy[[1]])
-
-
-
-
-# war_prayer
-data(war_prayer)
-
-# View text representation of war_prayer
-inspect(war_prayer[[1]])
-
-
-
-
-# war_racket
-# Example 2
-
-data(war_racket)
-
-# View text representation of war_racket
-inspect(war_racket[[1]])
-
-
-
-
-# connect_dots
-data(connect_dots)
-
-# View text representation of connect_dots
-inspect(connect_dots[[1]])
-
-
-
-
-# us_them
-data(us_them)
-
-# View text representation of us_them
-inspect(us_them[[1]])
-
-
-
-
-# climate_strange
-data(climate_strange)
-
-# View text representation of climate_strange
-inspect(climate_strange[[1]])
-```
-
 \bigskip
 \bigskip
 

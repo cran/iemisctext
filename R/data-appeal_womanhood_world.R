@@ -1,8 +1,9 @@
 #' Appeal to Womanhood Throughout the World
 #'
-#' A dataset which contains one document written by Julia Ward Howe
-#' that asks that Christian women all over the world come together
-#' to start a movement for global peace and unity.
+#' A dataset which contains one document written by Julia Ward Howe that asks
+#' that Christian women all over the world come together to start a movement
+#' for global peace and unity. The original text is public domain (CC0 1.0
+#' Universal license).
 #'
 #' @format A VCorpus of 1 text document.
 #'

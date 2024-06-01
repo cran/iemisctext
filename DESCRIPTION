@@ -1,22 +1,20 @@
 Package: iemisctext
 Title: Irucka Embry's Miscellaneous Text Collection
-Version: 1.0.0
+Version: 1.0.1
 Depends: R (>= 3.5.0)
-Suggests: install.load, tm, knitr, rmarkdown, xopen, spelling, formatR
+Suggests: install.load, tm, knitr, rmarkdown, xopen, spelling, formatR,
+        data.table, ggwordcloud, cffr, bibtex (>= 0.5.0)
 Author: Irucka Embry [aut, cre]
 Maintainer: Irucka Embry <iembry@ecoccs.com>
-Description: The eclectic collection includes the following written pieces:
-    "Appeal to Womanhood Throughout the World" By Julia Ward Howe, "The War 
-    Prayer" By Mark Twain, "War Is A Racket" By Major General Smedley Butler,
-    "The Mask of Anarchy: Written on the Occasion of the Massacre at Manchester"
-    By Percy Bysshe Shelley, "Connect the D.O.T.S." By Obiora Embry, "Untitled:
-    Climate Strange" By Irucka Ajani Embry, and "Untitled: Us versus Them or
-    People Screwing over Other People (as we all live on one Earth and there is
-    no 'us versus them' in the actual Ultimate Reality}" By Irucka Ajani Embry.
+Description: An eclectic collection of short stories and poetry with topics on
+    climate strange, connecting the geopolitical dots, the myth of us versus
+    them, and the idiocy of war. Please refer to the COPYRIGHTS file and the
+    text_citation.cff file for the reference copyright information and for the
+    complete citations of the reference sources, respectively.
 URL: https://gitlab.com/iembry/iemisctext
 BugReports: https://gitlab.com/iembry/iemisctext/-/issues
-License: GPL (>= 3)
-Copyright: file COPYRIGHT
+License: Artistic License 2.0
+Copyright: file COPYRIGHTS
 Language: en-US
 Encoding: UTF-8
 LazyData: true
@@ -24,6 +22,6 @@ LazyDataCompression: xz
 VignetteBuilder: knitr
 RoxygenNote: 7.3.1
 NeedsCompilation: no
-Packaged: 2024-05-26 06:14:24 UTC; xbyri
+Packaged: 2024-05-31 17:51:48 UTC; xbyri
 Repository: CRAN
-Date/Publication: 2024-05-26 06:30:02 UTC
+Date/Publication: 2024-06-01 10:33:22 UTC

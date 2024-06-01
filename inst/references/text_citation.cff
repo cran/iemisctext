@@ -1,0 +1,118 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "iemisctext" in publications use:'
+type: software
+license: GPL-3.0-or-later
+title: 'iemisctext: Irucka Embry''s Miscellaneous Text Collection'
+version: 1.0.0
+abstract: 'The eclectic collection includes the following written pieces: "Appeal
+  to Womanhood Throughout the World" By Julia Ward Howe, "The War Prayer" By Mark
+  Twain, "War Is A Racket" By Major General Smedley Butler, "The Mask of Anarchy:
+  Written on the Occasion of the Massacre at Manchester" By Percy Bysshe Shelley,
+  "Connect the D.O.T.S." By Obiora Embry, "Untitled: Climate Strange" By Irucka Ajani
+  Embry, and "Untitled: Us versus Them or People Screwing over Other People (as we
+  all live on one Earth and there is no ''us versus them'' in the actual Ultimate
+  Reality" By Irucka Ajani Embry.'
+authors:
+- family-names: Embry
+  given-names: Irucka
+  email: iembry@ecoccs.com
+repository: https://CRAN.R-project.org/package=iemisctext
+repository-code: https://gitlab.com/iembry/iemisctext
+url: https://gitlab.com/iembry/iemisctext
+date-released: '2024-05-26'
+contact:
+- family-names: Embry
+  given-names: Irucka
+  email: iembry@ecoccs.com
+references:
+- type: generic
+  title: 'The Mask of Anarchy: Written on the Occasion of the Massacre at Manchester'
+  authors:
+  - family-names: Shelley
+    given-names: Percy Bysshe
+  year: '1832'
+  copyright: CC0 1.0 Universal license
+  url: https://knarf.english.upenn.edu/PShelley/anarchy.html
+- type: generic
+  title: Appeal to Womanhood Throughout the World
+  authors:
+  - family-names: Howe
+    given-names: Julia Ward
+  month: '9'
+  year: '1870'
+  copyright: CC0 1.0 Universal license
+  url: https://www.loc.gov/resource/rbpe.07400300
+- type: generic
+  title: The War Prayer
+  authors:
+  - family-names: Twain
+    given-names: Mark
+  year: '1905'
+  copyright: CC0 1.0 Universal license
+  url: https://en.wikisource.org/wiki/The_War_Prayer
+- type: book
+  title: 'Balancing the Rift: ReCONNECTualizing the Pasenture'
+  authors:
+  - family-names: Embry
+    given-names: Irucka Ajani
+  section: 'Untitled: Climate Strange'
+  publisher:
+    name: Questioning the Universe Publishing (QUP)
+    address: PO BOX 68500 Nashville TN 37206-8500
+  year: '2014'
+  edition: First Edition
+  month: '2'
+  isbn: 978-0-9914994-0-3
+  copyright: Creative Commons Attribution-NoDerivatives 4.0 International license
+    (CC BY-ND 4.0)
+  url: https://www.questionuniverse.com/books/balancing-the-rift.html
+  start: 206-213
+- type: book
+  title: 'Expanding Horizons Through Creative Expressions: Reflections and Thoughts
+    Related to the Struggle for Peace, Sustainability, Equality, and the Search for
+    Humanity'
+  authors:
+  - family-names: Embry
+    given-names: Obiora
+  section: Connect the D.O.T.S.
+  publisher:
+    name: Obiora Embry
+  year: '2013'
+  edition: First Edition
+  month: '7'
+  isbn: '9780989750707'
+  copyright: Creative Commons Attribution-NoDerivs 3.0 Unported license (CC BY-ND
+    3.0)
+  url: https://www.embrybooks.org/books/expanding-horizons/
+  start: 78-82
+- type: book
+  title: 'Balancing the Rift: ReCONNECTualizing the Pasenture'
+  authors:
+  - family-names: Embry
+    given-names: Irucka Ajani
+  section: 'Untitled: Us versus Them or People Screwing over Other People...'
+  publisher:
+    name: Questioning the Universe Publishing (QUP)
+    address: PO Box 68500 Nashville, TN 37206-8500
+  year: '2014'
+  edition: First Edition
+  month: '2'
+  isbn: 978-0-9914994-0-3
+  copyright: Creative Commons Attribution-NoDerivatives 4.0 International license
+    (CC BY-ND 4.0)
+  url: https://www.questionuniverse.com/books/balancing-the-rift.html
+  start: 119-123
+- type: generic
+  title: War Is A Racket
+  authors:
+  - family-names: Butler
+    given-names: Major General Smedley
+  year: '1935'
+  copyright: CC0 1.0 Universal license
+  url: https://ratical.org/ratville/CAH/warisaracket.html
+

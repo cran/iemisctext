@@ -1,4 +1,14 @@
-﻿# iemisctext 1.0.0 (26 May 2024)
+﻿# iemisctext 1.0.1 (1 June 2024)
+
+* Added `cffr`, `data.table`, `bibtex` and `ggwordcloud` to Suggests
+* Revised the Example Analysis using the tm package vignette
+* Updated the README
+* Modified the COPYRIGHTS file (previously COPYRIGHT)
+* Changed the license from GPL >= 3 to Artistic License 2.0
+* Received an e-mail issue from Prof Brian Ripley on 29 May 2024 regarding stating that the package had been removed due to copyright issues. The issues have been resolved.
+
+
+# iemisctext 1.0.0 (26 May 2024)
 
 * Added `formatR`, `spelling` and `xopen` to Suggests & removed `NLP` from Suggests
 * Changed the R version due to this warning message: "Added dependency on R >= 3.5.0 because serialized objects in serialize/load version 3 cannot be read in older versions of R."

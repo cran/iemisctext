@@ -14,7 +14,8 @@
 
 ## ----eval = FALSE-------------------------------------------------------------
 #  
-#  xopen(system.file("texts", "pdf", "Appeal-womanhood-throughout-the-world.pdf", package = "iemisctext"))
+#  xopen(system.file("texts", "pdf", "Appeal-womanhood-throughout-the-world.pdf",
+#  package = "iemisctext"))
 #  
 
 ## ----eval = FALSE-------------------------------------------------------------
@@ -34,7 +35,8 @@
 
 ## ----eval = FALSE-------------------------------------------------------------
 #  
-#  xopen(system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf", package = "iemisctext"))
+#  xopen(system.file("texts", "pdf", "Untitled_Us-versus-Them-or-People-Screwing-over-Other-People.pdf"
+#  , package = "iemisctext"))
 #  
 
 ## ----eval = FALSE-------------------------------------------------------------
